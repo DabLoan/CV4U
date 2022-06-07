@@ -10,11 +10,6 @@ $mdp = mysqli_real_escape_string($db,htmlspecialchars($_POST['mdp']));
 $confmdp = mysqli_real_escape_string($db,htmlspecialchars($_POST['confmdp']));
 
 if(!empty($nom) && !empty($prenom) && !empty($mail) && !empty($mdp) && !empty($confmdp)){
-<<<<<<< HEAD
-    if($mdp == $cpnfmdp){
-        $mdp = md5($mdp);
-        $req ; 
-=======
     if($mdp == $confmdp){
         $mdp = password_hash($mdp, PASSWORD_DEFAULT);
         $req = 'INSERT INTO utilisateurs (prenom,nom,mail,pwd) VALUES ("'.$prenom.'","'.$nom.'","'.$mail.'", "'.$mdp.'");';
@@ -26,7 +21,6 @@ if(!empty($nom) && !empty($prenom) && !empty($mail) && !empty($mdp) && !empty($c
         {
             header('Location: inscription.php?erreur=3');
         }
->>>>>>> Update-03/05
     }else{
         header('Location: inscription.php?erreur=2');
     }

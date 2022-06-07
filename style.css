@@ -1,20 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-<<<<<<< HEAD
-body{
-    font-family: 'Work Sans', sans-serif;
-    background-color: aliceblue;
-}
-
-header{
-    background-color: rgba(7, 156, 225, 0.768);
-    margin:-8;
-    margin-bottom: 8;
-    height: 4%;
-}
-.header {
-    padding: 15px 0;
-=======
 
 body{
   font-family: 'Work Sans', sans-serif;
@@ -29,62 +14,10 @@ header{
 }
 .header {
   padding: 15px 0;
->>>>>>> Update-03/05
 }
 
 
 .lheader{
-<<<<<<< HEAD
-  float : left;
-}
-
-header::after{
-  content:'';
-  display: table;
-  clear: both;
-}
-
-nav ul{
-  margin: 0;
-  padding : 0;
-  list-style: none;
-}
-
-nav li{
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 7px;
-  position: relative;
-}
-  
-nav a{
-    color : rgb(59, 59, 59);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    transition: 1s;
-  }
-  
-  nav a:hover{
-    color: rgb(59, 59, 59);
-  }
-  
-  nav a::before{
-    content: '';
-    display: block;
-    height: 5px;
-    widows: 100%;
-    background-color: rgb(59, 59, 59);
-    position:absolute;
-    top: -15  ;
-    width: 0%;
-    transition: 1s;
-  }
-  
-  nav a:hover::before{
-    width: 100%;
-  }
-=======
 float : left;
 }
 
@@ -282,4 +215,3 @@ img{
   height: 3%;
   width: 8%;
 }
->>>>>>> Update-03/05
