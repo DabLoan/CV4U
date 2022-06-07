@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  carbone:
+    #    volumes:
+    #  - "./app:/home/node"
+    ports:
+      - "${CARBONE_PORT:-3000}:3000"

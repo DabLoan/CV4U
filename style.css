@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+<<<<<<< HEAD
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: aliceblue;
+}
+
+header{
+    background-color: rgba(7, 156, 225, 0.768);
+    margin:-8;
+    margin-bottom: 8;
+    height: 4%;
+}
+.header {
+    padding: 15px 0;
+=======
+
+body{
+  font-family: 'Work Sans', sans-serif;
+  background-color: aliceblue;
+}
+
+header{
+  background-color: rgba(7, 156, 225, 0.768);
+  margin:-8;
+  margin-bottom: 8;
+  height: 4%;
+}
+.header {
+  padding: 15px 0;
+>>>>>>> Update-03/05
+}
+
+
+.lheader{
+<<<<<<< HEAD
+  float : left;
+}
+
+header::after{
+  content:'';
+  display: table;
+  clear: both;
+}
+
+nav ul{
+  margin: 0;
+  padding : 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 7px;
+  position: relative;
+}
+  
+nav a{
+    color : rgb(59, 59, 59);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 1s;
+  }
+  
+  nav a:hover{
+    color: rgb(59, 59, 59);
+  }
+  
+  nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    widows: 100%;
+    background-color: rgb(59, 59, 59);
+    position:absolute;
+    top: -15  ;
+    width: 0%;
+    transition: 1s;
+  }
+  
+  nav a:hover::before{
+    width: 100%;
+  }
+=======
+float : left;
+}
+
+header::after{
+content:'';
+display: table;
+clear: both;
+}
+
+nav ul{
+margin: 0;
+padding : 0;
+list-style: none;
+}
+
+nav li{
+display: inline-block;
+margin-left: 70px;
+padding-top: 7px;
+position: relative;
+}
+
+nav a{
+  color : rgb(59, 59, 59);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 1s;
+}
+
+nav a:hover{
+  color: rgb(59, 59, 59);
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  widows: 100%;
+  background-color: rgb(59, 59, 59);
+  position:absolute;
+  top: -15  ;
+  width: 0%;
+  transition: 1s;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+/* Inscr et con form */
+
+.inscription{
+  border:solid 1px #61daff;
+  border-radius: 5px;
+  position:relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+  margin-top: 7%;
+  width: 18%;
+  height: 30%;
+  align-items: center;
+}
+
+.inscription input{
+  border: solid 0.2px;
+  margin-top: 2%;
+  align-items: center;
+  border-radius: 3px;
+  height: 12%;
+}
+
+.inscription .submit{
+  background-color: rgba(7, 156, 225, 0.768);
+  color:white;
+  border: unset;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.inscription .top{
+  margin-top: 9%;
+}
+
+.block{
+  border:solid 1px #61daff;
+  border-radius: 5px;
+  position:relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+  margin-top: 7%;
+  width: 18%;
+  height: 20%;
+  align-items: center;
+}
+
+.block input{
+  border: solid 0.2px;
+  margin-top: 2%;
+  align-items: center;
+  border-radius: 3px;
+  height: 20%;
+}
+
+.block .submit{
+  background-color: rgba(7, 156, 225, 0.768);
+  color:white;
+  border: unset;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.block .top{
+  margin-top: 9%;
+}
+
+/* choix template */
+
+.select-box {
+  position: relative;
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+  font-size: 18px;
+  color: #60666d;
+}
+
+
+img{
+  margin-top:2%;
+  margin-left: 38.5%;
+}
+/* remplir cv */
+
+.info-perso{
+  border:solid 1px #61daff;
+  border-radius: 5px;
+  position:relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  margin-top: 5%;
+  width: 20vw;
+  height: 30vh;
+  align-items: center;
+}
+
+.info-perso .notfile{
+  margin-bottom: 2%;
+  border: solid 0.2px;
+  border-radius: 5px;
+  height: 10%;
+}
+
+.template{
+  margin-top: 5%;
+  margin-left: 48%;
+  border-radius: 15px;
+  border: none;
+  background-color: #61daff;
+  color: white;
+  height: 3%;
+  width: 8%;
+}
+
+.choix-final{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.choix-final input{
+  height:10%;
+  width: 9%;
+}
+
+.enligne{
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.cv{
+  margin-top: 2%;
+  border-radius: 15px;
+  border: none;
+  background-color: #61daff;
+  color: white;
+  height: 3%;
+  width: 8%;
+}
+>>>>>>> Update-03/05
