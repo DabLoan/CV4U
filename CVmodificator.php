@@ -2,6 +2,8 @@
 
 include_once __DIR__ .'/vendor/tinybutstrong/opentbs/demo/tbs_class.php';
 include_once __DIR__ .'/vendor/tinybutstrong/opentbs/tbs_plugin_opentbs.php';
+include_once __DIR__ .'/vendor/guzzlehttp/guzzle/src';
+include_once __DIR__ .'/vendor/guzzlehttp/psr7/src';
 include_once __DIR__ .'/CvInterface.php';
 
 
@@ -34,7 +36,7 @@ class CvCreator implements CV4UInterface{
         $TBS->Show(OPENTBS_FILE, $data['nomFichier'].'.odt');
 
         // ligne pour avoir le pdf 
-        // file_put_contents($data['nomFichier'].".pdf",$this->odtToPdf('./'.$data['nomFichier'].'.odt',$data['nomFichier']));
+        file_put_contents($data['nomFichier'].".pdf",$this->odtToPdf('./'.$data['nomFichier'].'.odt',$data['nomFichier']));
     }   
     private function getTempDir(){
         $tmpname=tempnam(sys_get_temp_dir(),'php');

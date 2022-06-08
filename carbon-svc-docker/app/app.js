@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 	res.send('Carbone renderer...')
 })
 
-app.post('/xlsx2pdf/:pdffilename', upload.single('myFile'), function(req, res, next) {
+app.post('/CV4U/:pdffilename', upload.single('myFile'), function(req, res, next) {
 	const uploadedfile = req.file.path ;
 	var data ={};
 	var options = {

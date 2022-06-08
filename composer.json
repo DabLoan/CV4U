@@ -1,5 +1,6 @@
 {
     "require": {
-        "tinybutstrong/opentbs": "^1.10"
+        "tinybutstrong/opentbs": "^1.10",
+        "guzzlehttp/guzzle": "^7.4"
     }
 }
