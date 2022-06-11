@@ -1,9 +1,10 @@
 <?php
 
+use GuzzleHttp\Client;
+use GuzzleHttp\Psr7;
+include_once './vendor/autoload.php';
 include_once __DIR__ .'/vendor/tinybutstrong/opentbs/demo/tbs_class.php';
 include_once __DIR__ .'/vendor/tinybutstrong/opentbs/tbs_plugin_opentbs.php';
-include_once __DIR__ .'/vendor/guzzlehttp/guzzle/src';
-include_once __DIR__ .'/vendor/guzzlehttp/psr7/src';
 include_once __DIR__ .'/CvInterface.php';
 
 
