@@ -1,20 +1,22 @@
 <?php
 
-$db = mysqli_connect("localhost", "root_con", "root_connexion","cv4u")
-or die('could not connect to database');
+$db = new PDO('mysql:host=localhost;dbname=cv4u', 'root_con', 'root_connexion'); 
 
-$nom = mysqli_real_escape_string($db,htmlspecialchars($_POST['nom']));
-$prenom = mysqli_real_escape_string($db,htmlspecialchars($_POST['prenom']));
-$mail = mysqli_real_escape_string($db,htmlspecialchars($_POST['mail']));
-$mdp = mysqli_real_escape_string($db,htmlspecialchars($_POST['mdp']));
-$confmdp = mysqli_real_escape_string($db,htmlspecialchars($_POST['confmdp']));
+$nom = $_POST['nom'];
+$prenom = $_POST['prenom'];
+$mail = $_POST['mail'];
+$mdp = $_POST['mdp'];
+$confmdp = $_POST['confmdp'];
 
 if(!empty($nom) && !empty($prenom) && !empty($mail) && !empty($mdp) && !empty($confmdp)){
     if($mdp == $confmdp){
         $mdp = password_hash($mdp, PASSWORD_DEFAULT);
-        $req = 'INSERT INTO utilisateurs (prenom,nom,mail,pwd) VALUES ("'.$prenom.'","'.$nom.'","'.$mail.'", "'.$mdp.'");';
-        $exe_req = mysqli_query($db,$req);
-        if($exe_req){
+        $req = $db->prepare('INSERT INTO utilisateurs (prenom,nom,mail,pwd) VALUES (:prenom,:nom,:$mail, :$mdp);');
+        $req->bindParam(":prenom",$prenom);
+        $req->bindParam(":nom",$nom);
+        $req->bindParam(":mail",$mail);
+        $req->bindParam(":mdp",$mdp);
+        if($req->execute()){
             header('Location: index.php?reussite=1');
         }
         else
