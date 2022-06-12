@@ -1,3 +1,4 @@
 /vendor
 /node_modules
 /carbon-svc-docker/node_modules
+/carbon-svc-docker/app/uploads
