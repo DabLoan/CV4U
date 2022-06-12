@@ -42,6 +42,32 @@ session_start();
                     <p>Veillez à séparer chaque compétence d'une virgule</p>
                     <input type="text" name="competences" placeholder="Vos compétences" class="notfile">
                 </div>
+                <div class="experiencespro">
+                    <p>Expériences professionnelles</p>
+                    <select name="nbexp" id="nbexp" onchange="getNbExpe();">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <div id="exp1">
+                        <p>Entreprise 1</p>
+                        <input type="text" name="titre1" placeholder="Nom de l'entreprise">
+                        <input type="text" name="adresse1" placeholder="Adresse de l'entreprise">
+                        <input type="text" name="resume1" placeholder="Résumé de l'expérience">
+                    </div>
+                    <div id="exp2" style="display:none;">
+                        <p>Entreprise 2</p>
+                        <input type="text" name="titre2" placeholder="Nom de l'entreprise">
+                        <input type="text" name="adresse2" placeholder="Adresse de l'entreprise">
+                        <input type="text" name="resume2" placeholder="Résumé de l'expérience">
+                    </div>
+                    <div id="exp3" style="display:none;">
+                        <p>Entreprise 3</p>
+                        <input type="text" name="titre3" placeholder="Nom de l'entreprise">
+                        <input type="text" name="adresse3" placeholder="Adresse de l'entreprise">
+                        <input type="text" name="resume3" placeholder="Résumé de l'expérience">
+                    </div>
+                </div>
             </div>
             <br>
             <div class="choix-final">
@@ -54,3 +80,16 @@ session_start();
         </form>
     </body>
 </html>
+
+<script>
+    function getNbExpe(){
+        let nbexp = document.getElementById("nbexp").value
+        if(nbexp == "2"){
+            document.getElementById("exp2").style.display="block";
+        }
+        else if(nbexp== "3"){
+            document.getElementById("exp2").style.display="block";
+            document.getElementById("exp3").style.display="block";
+        }
+    }
+</script>

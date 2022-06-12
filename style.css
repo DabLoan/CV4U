@@ -215,3 +215,17 @@ img{
   height: 3%;
   width: 8%;
 }
+
+.experiencespro{
+  border:solid 1px #61daff;
+  border-radius: 5px;
+  position:relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  margin-top: 5%;
+  width: 20vw;
+  height: 40vh;
+  align-items: center;
+}
