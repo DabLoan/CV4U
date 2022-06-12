@@ -9,5 +9,5 @@ include_once __DIR__ .'/CvGenerator.php';
 $_POST['nomTemplate'] = $_SESSION['nomTemplate'];
 $donnees = new Tableau($_POST,$_FILES);
 $cv = new CvGenerator();
-$cv->createCv($donnees->transmettreDonnees());
+$cv->startCv($donnees->transmettreDonnees());
 header('Location: index.php');

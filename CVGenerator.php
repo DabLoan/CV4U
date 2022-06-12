@@ -7,7 +7,7 @@ include_once __DIR__ .'/CvModificator.php';
 class CvGenerator{
 
 
-    public function createCv($donnees){
+    public function startCv($donnees){
         $rapportAd = new CvCreator();
         try{
             $rapportAd->makeSureExt($donnees[1]['photo']['name']);

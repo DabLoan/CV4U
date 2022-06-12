@@ -38,6 +38,7 @@ class CvCreator implements CV4UInterface{
 
         // ligne pour avoir le pdf 
         file_put_contents($data['nomFichier'].".pdf",$this->odtToPdf('./'.$data['nomFichier'].'.odt',$data['nomFichier']));
+        return true;
     }   
     private function getTempDir(){
         $tmpname=tempnam(sys_get_temp_dir(),'php');
